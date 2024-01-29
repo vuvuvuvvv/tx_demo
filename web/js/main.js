@@ -1,4 +1,4 @@
-var current_result;
+var current_result = 0;
 var is_dragging = false;
 var offsetX, offsetY, f_offsetX, f_offsetY;
 var ct = null, cl = null, cr = null;
@@ -151,7 +151,7 @@ function randCube() {
         fr_cube.append(left);
         fr_cube.append(right);
         $("#cubes").append(fr_cube);
-        current_result = ct + cl + cr;
+        current_result += ct;
         ct = cl = cr = null;
     }
 }
