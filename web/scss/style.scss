@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Black Ops One";
-    src: url("/web/fonts/BlackOpsOne-Regular.ttf");
+    src: url("../fonts/BlackOpsOne-Regular.ttf");
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/web/fonts/Raleway-VariableFont_wght.ttf");
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
 }
 
 * {
@@ -40,13 +40,13 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background-image: url("/web/material/wood_bg.png");
+        background-image: url("../material/wood_bg.png");
         background-size: cover;
         filter: blur(10px);
     }
 
     #fr_main {
-        background-image: url("/web/material/frame_main2.png");
+        background-image: url("../material/frame_main2.png");
         background-size: cover;
         background-repeat: no-repeat;
         width: 1800px;
@@ -163,7 +163,7 @@ body {
                     transform: translate(-50%, -50%);
                     width: calc(5 / 13 * 100%);
                     aspect-ratio: 20 / 17;
-                    background-image: url("/web/material/plate.png");
+                    background-image: url("../material/plate.png");
                     background-size: cover;
                     background-repeat: no-repeat;
                 }
@@ -174,7 +174,7 @@ body {
                     left: 33%;
                     width: calc(175 / 520 * 100%);
                     aspect-ratio: 175 / 163;
-                    background-image: url("/web/material/cover.png");
+                    background-image: url("../material/cover.png");
                     background-size: cover;
                     background-repeat: no-repeat;
                     z-index: 999;
@@ -196,7 +196,7 @@ body {
                         position: absolute;
                         width: 48%;
                         aspect-ratio: 48 / 60;
-                        background-image: url("/web/material/frame_cube.png");
+                        background-image: url("../material/frame_cube.png");
                         background-size: contain;
                         background-repeat: no-repeat;
 
@@ -228,7 +228,7 @@ body {
                             right: 2px;
                             width: 50%;
                             height: calc(44 / 60 * 100%);
-                            background-image: url("/web/material/r4.png");
+                            background-image: url("../material/r4.png");
                             background-size: 180%;
                             background-repeat: no-repeat;
                             background-position: -17px -10px;

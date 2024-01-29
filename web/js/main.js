@@ -142,11 +142,11 @@ function randCube() {
         fr_cube = $(`<div class='cube' id='c${i}'></div>`);
         rollADice();
         let top = $(`<span class="ct"></span>`);
-        top.css('background-image', `url("/web/material/t${ct}.png")`);
+        top.css('background-image', `url("./web/material/t${ct}.png")`);
         let left = $(`<span class="cl"></span>`);
-        left.css('background-image', `url("/web/material/l${cl}.png")`);
+        left.css('background-image', `url("./web/material/l${cl}.png")`);
         let right = $(`<span class="cr"></span>`);
-        right.css('background-image', `url("/web/material/r${cr}.png")`);
+        right.css('background-image', `url("./web/material/r${cr}.png")`);
         fr_cube.append(top);
         fr_cube.append(left);
         fr_cube.append(right);
