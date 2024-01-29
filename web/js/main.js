@@ -133,6 +133,7 @@ function rollADice() {
 }
 
 function randCube() {
+    current_result = 0;
     for (let i = 1; i <= 3; i++) {
         let fr_cube = $(`#c${i}`);
         if (fr_cube.length > 0) {
