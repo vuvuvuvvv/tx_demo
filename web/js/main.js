@@ -39,6 +39,7 @@ $(document).ready(function () {
 
     cover.mousemove(function (e) {
         if (is_dragging && !is_opened && !is_shacking) {
+            header.html("Đang mở");
             var x = e.pageX - offsetX;
             var y = e.pageY - offsetY;
 
@@ -58,12 +59,17 @@ $(document).ready(function () {
     });
     //End hoạt ảnh
     $("#btn_shake").click(() => {
-        started = true;
-        cover.removeClass("open");
+        started = true; 
+        clearTimeout(gen_rs);
+        if (is_opened) {
+            is_opened = false;
+        }
+        if (cover.hasClass("open")) {
+            cover.removeClass("open");
+        };
         cover.css({ left: `${f_offsetX}%`, top: `${f_offsetY}%` });
-        is_opened = false;
         setTimeout(function () {
-            shakePlate()
+            shakePlate();
         }, 500);
     });
 });
