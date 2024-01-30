@@ -5,7 +5,6 @@ var ct = null, cl = null, cr = null;
 
 var is_opened = false;
 var is_shacking = false;
-
 var started = false;
 
 var gen_rs;
@@ -18,25 +17,6 @@ const cover = $('#cover');
 
 $(document).ready(function () {
     randCube();
-    //Xác nhận điều khoản
-    btn_start.on({
-        mouseenter: function () {
-            if ($("#confirm").prop("checked")) {
-                $(this).click(() => {
-                    intro.hide(500);
-                    fr_main.show(500);
-                });
-            } else {
-                var randomTop = Math.floor(Math.random() * (intro.outerHeight() - btn_start.outerHeight() * 2)) + btn_start.outerHeight() / 2;
-                var randomLeft = Math.floor(Math.random() * (intro.outerWidth() - btn_start.outerWidth() * 2)) + btn_start.outerWidth() / 2;
-                $(this).css({ top: randomTop, left: randomLeft });
-                $(this).click(() => {
-                    $(this).css({ top: randomTop, left: randomLeft });
-                });
-            }
-        },
-    });
-    //End confirm
 
     //Hoạt ảnh kéo thả bát úp
     f_offsetX = 33;
