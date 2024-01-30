@@ -59,16 +59,12 @@ $(document).ready(function () {
     //End hoạt ảnh
     $("#btn_shake").click(() => {
         started = true;
-        if (is_opened) {
-            cover.removeClass("open");
-            cover.css({ left: `${f_offsetX}%`, top: `${f_offsetY}%` });
-            is_opened = false;
-            setTimeout(function () {
-                shakePlate()
-            }, 500);
-        } else {
-            shakePlate();
-        }
+        cover.removeClass("open");
+        cover.css({ left: `${f_offsetX}%`, top: `${f_offsetY}%` });
+        is_opened = false;
+        setTimeout(function () {
+            shakePlate()
+        }, 500);
     });
 });
 
@@ -141,7 +137,7 @@ function result() {
     let rs = current_result;
     is_opened = true;
     cover.addClass("open");
-    if(started) {
-        header.html(`${rs} điểm - ${(rs>10)?"Tài":"Xỉu"}`);
+    if (started) {
+        header.html(`${rs} điểm - ${(rs > 10) ? "Tài" : "Xỉu"}`);
     }
 }
